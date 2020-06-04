@@ -1,46 +1,69 @@
 * {
-  box-sizing: border-box; 
-  padding: 0;
-  margin: 0;
+  font-family: "IBM Plex Serif", serif;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 
-body,
-html {
-  height: 100%;
-  display: block;
-  background-color: white;
+html,
+body {
+  margin: 0 auto;
+  padding: 0px;
 }
 
-.container{
-  background-color: #8094CF;
-  min-height: 500px;
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .info-block {
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 452px;
+  }
+}
+
+@media screen and (max-width: 1059px) and (min-width: 768px) {
+  .logo {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .info-block {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
+
+.container {
+  height: 528px;
+  background-color: #ffdf18;
 }
 
 .logo {
-  text-align: left;
-  font-size: 35px;
-  letter-spacing: -2px;
-  font-weight: bold;
-  color: #444;
-}
-
-.main-header {
-  padding: 50px;
-  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  min-height: 72px;
   font-size: 30px;
   letter-spacing: -2px;
   font-weight: bold;
-  color: #444;
-  
 }
 
-.search-content{
+.search-content {
+  padding: 50px;
+  font-size: 30px;
+  letter-spacing: -2px;
+  font-weight: bold;
   text-align: center;
 }
 
-.info-block{
-  min-height: 500px; 
-  padding: 30px;
+.info-block {
   font-size: 25px;
-  font-family: 'IBM Plex Serif', serif;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 75px;
+}
+
+.info-block p {
+  font-size: 16px;
+  margin-top: 8px;
+  line-height: 26px;
 }
