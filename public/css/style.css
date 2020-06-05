@@ -8,6 +8,17 @@ html,
 body {
   margin: 0 auto;
   padding: 0px;
+  display: block;
+}
+
+main {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -33,9 +44,27 @@ body {
   }
 }
 
+@media screen and (min-width: 1060px) {
+  .col {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .col {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
 .container {
   height: 528px;
-  background-color: #ffdf18;
+  background-image: url(/public/assets/images/gluten-free.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .logo {
@@ -45,6 +74,13 @@ body {
   font-size: 30px;
   letter-spacing: -2px;
   font-weight: bold;
+  max-width: 1024px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .search-content {
@@ -53,6 +89,19 @@ body {
   letter-spacing: -2px;
   font-weight: bold;
   text-align: center;
+}
+
+.col {
+  max-width: 1024px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  height: 100%;
+  width: 90%;
 }
 
 .info-block {
