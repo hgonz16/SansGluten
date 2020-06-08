@@ -1,5 +1,5 @@
 * {
-  font-family: "IBM Plex Serif", serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
 }
@@ -73,8 +73,6 @@ main {
   margin: 0 auto;
   min-height: 72px;
   font-size: 30px;
-  letter-spacing: -2px;
-  font-weight: bold;
   max-width: 1024px;
   margin: 0 auto;
   box-sizing: content-box;
@@ -87,9 +85,21 @@ main {
 .search-content {
   padding: 50px;
   font-size: 30px;
-  letter-spacing: -2px;
-  font-weight: bold;
   text-align: center;
+}
+
+input{
+  text-align: left;
+  width: 240px;
+  height: 30px;
+  outline: none;
+  border-radius: 40px;
+  border: none;
+}
+
+input[type=search]{
+  padding-left: 20px;
+  font-size: 16px;
 }
 
 .col {
