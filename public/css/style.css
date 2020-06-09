@@ -21,7 +21,16 @@ main {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 891px) {
+  .wheat{
+    display: none;
+  }
+  .location{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 891px) {
   .logo {
     padding-left: 24px;
     padding-right: 24px;
@@ -32,7 +41,7 @@ main {
   }
 }
 
-@media screen and (max-width: 1059px) and (min-width: 768px) {
+@media screen and (max-width: 1059px) and (min-width: 891px) {
   .logo {
     padding-left: 54px;
     padding-right: 54px;
@@ -50,7 +59,7 @@ main {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 891px) {
   .col {
     padding-left: 36px;
     padding-right: 36px;
@@ -129,17 +138,16 @@ input[type=search]{
   color: #8F95A3;
 }
 
-.wheat{
-  user-select: none;
-  width: auto;
-  height: 200px;
-  margin-top: 50%;
-  margin-left: 50%;
-}
-
 .location{
   user-select: none;
   width: auto;
   height: 300px;
+  margin-top: 10%;
+}
+
+.wheat{
+  user-select: none;
+  width: auto;
+  height: 280px;
   margin-top: 10%;
 }
